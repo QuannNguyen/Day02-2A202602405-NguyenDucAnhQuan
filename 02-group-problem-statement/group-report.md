@@ -1,10 +1,10 @@
-# 02 - Group Problem Statement (Ban nop nhom)
+# 02 - Group Problem Statement (Bản nộp nhóm)
 
-> Ban tong hop tu `individual-report.md` va `indiviual_report2.md`. `individual-report3.md` hien dang rong, vi vay cac candidate ca nhan cua ba thanh vien bo sung chua duoc dien gia.
+> Bản tổng hợp từ `individual-report.md` và `indiviual_report2.md`. `individual-report3.md` hiện đang rỗng, vì vậy các candidate cá nhân của ba thành viên bổ sung chưa được điền giả.
 
-## Thanh vien nhom
+## Thành viên nhóm
 
-| STT | Ho va ten | Ma hoc vien | Vai tro trong nhom |
+| STT | Họ và tên | Mã học viên | Vai trò trong nhóm |
 |---|---|---|---|
 | 1 | Dương Đức Vương | 2A202602944 | Facilitator, validation |
 | 2 | Nguyễn Đức Anh Quân | 2A202602405 | Workflow, research |
@@ -12,77 +12,77 @@
 | 4 | Nguyễn Ngọc Linh | 2A202602480 | Research, validation |
 | 5 | Lê Thị Trâm Anh | 2A202602846 | Writer, documentation |
 
-**Phan cong bo sung:** Dương Đức Vương phụ trách điều phối và validation; Nguyễn Ngọc Linh phụ trách research và thu thập dữ liệu; Lê Thị Trâm Anh phụ trách viết và chuẩn hóa báo cáo.
+**Phân công bổ sung:** Dương Đức Vương phụ trách điều phối và validation; Nguyễn Ngọc Linh phụ trách research và thu thập dữ liệu; Lê Thị Trâm Anh phụ trách viết và chuẩn hóa báo cáo.
 
-**Candidate problem nhom chon (1 cau):**
+**Candidate problem nhóm chọn (1 câu):**
 
-Nhan vien van hanh phai doc, phan loai va chuyen tiep thong tin khong co cau truc tu nhieu nguon; mot workflow AI co human review co the tao ban tom tat/JSON de giam thoi gian xu ly ma van giu quyen quyet dinh cho nguoi phu trach.
+Nhân viên vận hành phải đọc, phân loại và chuyển tiếp thông tin không có cấu trúc từ nhiều nguồn; một workflow AI có human review có thể tạo bản tóm tắt/JSON để giảm thời gian xử lý mà vẫn giữ quyền quyết định cho người phụ trách.
 
 ---
 
 ## Phase 3 - Group Convergence
 
-### 3.1. Top candidates tu cac bao cao da nhan
+### 3.1. Top candidates từ các báo cáo đã nhận
 
-| # | Nguoi dua ra | Candidate problem | Nguoi gap van de | Diem nghen | Cam nhan nhanh cua nhom |
+| # | Người đưa ra | Candidate problem | Người gặp vấn đề | Điểm nghẽn | Cảm nhận nhanh của nhóm |
 |---|---|---|---|---|---|
-| 1 | Nguyen Duc Anh Quan | Tong hop task/deadline tu Discord, Zalo, Google Docs | Leader va thanh vien nhom | Doc, doi chieu va gom thong tin tu nhieu kenh | Workflow ro, nhung can gioi han pham vi nguon |
-| 2 | Nguyen Duc Anh Quan | Tim lai tai lieu, quyet dinh va file cu truoc deadline | Ca nhom | Search va xac dinh dung phien ban | Pain lap lai, can kho du lieu co quyen truy cap |
-| 3 | Nguyen Duc Anh Quan | Viet bao cao/README tu nhieu nguon roi rac | Nguoi viet bao cao | Doc, tom tat, tao draft va sua format | AI phu hop o buoc outline/draft, khong nen tu viet toan bo |
-| 4 | Do Hoang Quan | Xu ly su co pin xe Xanh SM va dieu phoi xe sac/cu ho | Dispatcher va tai xe | Doi chieu GPS, tram sac, % pin va soan huong dan | Impact lon, nhung rui ro van hanh va du lieu realtime cao |
-| 5 | Do Hoang Quan | Phan loai va dinh tuyen ticket cu dan Vinhomes | CSKH va cu dan | Doc ticket khong cau truc, chon danh muc va BQL | Workflow ro, lap lai cao, do duoc tot |
-| 6 | Do Hoang Quan | Chan doan so bo loi xe VinFast tu mo ta tieng Viet | Ky thuat vien va khach hang | Hoi lai trieu chung va tra cuu tai lieu | AI hieu ngon ngu tu nhien, nhung risk sai chan doan cao |
-| 7 | Do Hoang Quan | Tong hop ly do khach huy cuoc tu ghi am va ghi chu | BA/Ops | Nghe mau va tim pattern thu cong | Co the mo rong nhung can du lieu ghi am |
-| 8 | Do Hoang Quan | Trich xuat release notes tu commit/PR | Ky su, QA va Ops | Hieu commit viet tat va chuyen thanh noi dung de test | Pham vi nho, de lam prototype |
-| 9 | Dương Đức Vương, Nguyễn Ngọc Linh, Lê Thị Trâm Anh | Chua co candidate tu bao cao ca nhan | Chua xac dinh | Chua xac dinh | Can bo sung cac bao cao ca nhan |
+| 1 | Nguyễn Đức Anh Quân | Tổng hợp task/deadline từ Discord, Zalo, Google Docs | Leader và thành viên nhóm | Đọc, đối chiếu và gom thông tin từ nhiều kênh | Workflow rõ, nhưng cần giới hạn phạm vi nguồn |
+| 2 | Nguyễn Đức Anh Quân | Tìm lại tài liệu, quyết định và file cũ trước deadline | Cả nhóm | Search và xác định đúng phiên bản | Pain lặp lại, cần kho dữ liệu có quyền truy cập |
+| 3 | Nguyễn Đức Anh Quân | Viết báo cáo/README từ nhiều nguồn rời rạc | Người viết báo cáo | Đọc, tóm tắt, tạo draft và sửa format | AI phù hợp ở bước outline/draft, không nên tự viết toàn bộ |
+| 4 | Đỗ Hoàng Quân | Xử lý sự cố pin xe Xanh SM và điều phối xe sạc/cứu hộ | Dispatcher và tài xế | Đối chiếu GPS, trạm sạc, % pin và soạn hướng dẫn | Impact lớn, nhưng rủi ro vận hành và dữ liệu realtime cao |
+| 5 | Đỗ Hoàng Quân | Phân loại và định tuyến ticket cư dân Vinhomes | CSKH và cư dân | Đọc ticket không cấu trúc, chọn danh mục và BQL | Workflow rõ, lặp lại cao, đo được tốt |
+| 6 | Đỗ Hoàng Quân | Chẩn đoán sơ bộ lỗi xe VinFast từ mô tả tiếng Việt | Kỹ thuật viên và khách hàng | Hỏi lại triệu chứng và tra cứu tài liệu | AI hiểu ngôn ngữ tự nhiên, nhưng risk sai chẩn đoán cao |
+| 7 | Đỗ Hoàng Quân | Tổng hợp lý do khách hủy cuốc từ ghi âm và ghi chú | BA/Ops | Nghe mẫu và tìm pattern thủ công | Có thể mở rộng nhưng cần dữ liệu ghi âm |
+| 8 | Đỗ Hoàng Quân | Trích xuất release notes từ commit/PR | Kỹ sư, QA và Ops | Hiểu commit viết tắt và chuyển thành nội dung để test | Phạm vi nhỏ, dễ làm prototype |
+| 9 | Dương Đức Vương, Nguyễn Ngọc Linh, Lê Thị Trâm Anh | Chưa có candidate từ báo cáo cá nhân | Chưa xác định | Chưa xác định | Cần bổ sung các báo cáo cá nhân |
 
 ### 3.2. Gom trùng / cluster
 
-| Cluster | Candidates included | Pattern chung | Ghi chu |
+| Cluster | Candidates included | Pattern chung | Ghi chú |
 |---|---|---|---|
-| A - Tong hop tri thuc nhom | 1, 2, 3 | Thong tin roi rac, nguoi dung phai doc va chuyen thanh ban co cau truc | Phu hop workflow AI co review |
-| B - Triage va routing van hanh | 4, 5, 6 | Dau vao tu nhien/nhieu he thong, can phan loai va chon hanh dong tiep theo | Can boundary va fallback chat |
-| C - Tom tat van hanh | 7, 8 | Chuyen ghi am, commit hoac log thanh summary cho nguoi khac xu ly | De prototype neu co du lieu mau |
-| D | 9 | Chua co thong tin | Cho bo sung report 3 |
+| A - Tổng hợp tri thức nhóm | 1, 2, 3 | Thông tin rời rạc, người dùng phải đọc và chuyển thành bản có cấu trúc | Phù hợp workflow AI có review |
+| B - Triage và routing vận hành | 4, 5, 6 | Đầu vào tự nhiên/nhiều hệ thống, cần phân loại và chọn hành động tiếp theo | Cần boundary và fallback chặt |
+| C - Tóm tắt vận hành | 7, 8 | Chuyển ghi âm, commit hoặc log thành summary cho người khác xử lý | Dễ prototype nếu có dữ liệu mẫu |
+| D | 9 | Chưa có thông tin | Chờ bổ sung report 3 |
 
 ### 3.3. Shortlist
 
-| Candidate | Vi sao vao shortlist | Rui ro / dieu chua ro |
+| Candidate | Vì sao vào shortlist | Rủi ro / điều chưa rõ |
 |---|---|---|
-| Phan loai va dinh tuyen ticket cu dan Vinhomes | 200 ticket/ngay theo bao cao; workflow 4 buoc; metric thoi gian va accuracy ro | Chua co tap ticket da an danh; ticket multi-intent chua ro |
-| Tong hop task/deadline nhieu kenh | Lap lai 2-3 lan/tuan; pain anh huong ca nhom; co human review tu nhien | Quyen truy cap Discord/Zalo/Docs va nguon su that chua ro |
-| Xu ly su co pin nguy cap cho Xanh SM | 80-100 vu/ngay; bottleneck 15 phut; impact doanh thu lon | Ranh gio an toan, API realtime va trach nhiem khi sai cao |
+| Phân loại và định tuyến ticket cư dân Vinhomes | 200 ticket/ngày theo báo cáo; workflow 4 bước; metric thời gian và accuracy rõ | Chưa có tập ticket đã ẩn danh; ticket multi-intent chưa rõ |
+| Tổng hợp task/deadline nhiều kênh | Lặp lại 2-3 lần/tuần; pain ảnh hưởng cả nhóm; có human review tự nhiên | Quyền truy cập Discord/Zalo/Docs và nguồn sự thật chưa rõ |
+| Xử lý sự cố pin nguy cấp cho Xanh SM | 80-100 vụ/ngày; bottleneck 15 phút; impact doanh thu lớn | Ranh giới an toàn, API realtime và trách nhiệm khi sai cao |
 
-### 3.4. Score de dong thuan
+### 3.4. Score để đồng thuận
 
-| Candidate | Actor ro | Workflow ro | Pain co evidence | Impact do duoc | Lam trong lab | So sanh R/W/A | Nhom hieu domain | Tong |
+| Candidate | Actor rõ | Workflow rõ | Pain có evidence | Impact đo được | Làm trong lab | So sánh R/W/A | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Phan loai/routing ticket cu dan | 5 | 5 | 4 | 5 | 4 | 5 | 3 | 31 |
 | Tong hop task/deadline nhieu kenh | 5 | 5 | 4 | 4 | 3 | 4 | 4 | 29 |
 | Xu ly su co pin nguy cap | 5 | 5 | 4 | 5 | 2 | 3 | 3 | 27 |
 
-**Candidate nhom chon:**
+**Candidate nhóm chọn:**
 
 ```text
-Ho tro phan loai va dinh tuyen ticket phan anh cu dan bang AI, voi CSKH review truoc khi chuyen den BQL phu hop.
+Hỗ trợ phân loại và định tuyến ticket phản ánh cư dân bằng AI, với CSKH review trước khi chuyển đến BQL phù hợp.
 ```
 
-**Vi sao chon:**
+**Vì sao chọn:**
 
 ```text
-Candidate co actor, dau vao, workflow va dau ra ro rang: CSKH nhan ticket, doc noi dung, phan loai, chon BQL va chuyen tiep. Bao cao ca nhan uoc tinh khoang 200 ticket/ngay/khu do thi va 8 phut/ticket, nen co the do baseline bang thoi gian xu ly, accuracy va ty le route dung. AI phu hop de trich xuat entity va tao JSON, trong khi CSKH van giu quyen review. Pham vi prototype co the gioi han vao mot so danh muc va mot khu do thi.
+Candidate có actor, đầu vào, workflow và đầu ra rõ ràng: CSKH nhận ticket, đọc nội dung, phân loại, chọn BQL và chuyển tiếp. Báo cáo cá nhân ước tính khoảng 200 ticket/ngày/khu đô thị và 8 phút/ticket, nên có thể đo baseline bằng thời gian xử lý, accuracy và tỷ lệ route đúng. AI phù hợp để trích xuất entity và tạo JSON, trong khi CSKH vẫn giữ quyền review. Phạm vi prototype có thể giới hạn vào một số danh mục và một khu đô thị.
 ```
 
-**Vi sao khong chon candidate con lai:**
+**Vì sao không chọn candidate còn lại:**
 
 ```text
-Tong hop task/deadline tu nhieu kenh co pain ro nhung phu thuoc nhieu nen tang va quyen truy cap, trong khi nhom chua co du lieu lich su de kiem chung. Xu ly su co pin co impact lon nhung sai sot co the gay ton that van hanh va can API realtime, vuot qua pham vi lab hien tai. Cac candidate viet bao cao, tim file va release notes de prototype nhung impact nho hon va chua duoc ca nhom uu tien.
+Tổng hợp task/deadline từ nhiều kênh có pain rõ nhưng phụ thuộc nhiều nền tảng và quyền truy cập, trong khi nhóm chưa có dữ liệu lịch sử để kiểm chứng. Xử lý sự cố pin có impact lớn nhưng sai sót có thể gây tổn thất vận hành và cần API realtime, vượt quá phạm vi lab hiện tại. Các candidate viết báo cáo, tìm file và release notes dễ prototype nhưng impact nhỏ hơn và chưa được cả nhóm ưu tiên.
 ```
 
 **Disagreement:**
 
 ```text
-Nguyen Duc Anh Quan uu tien bai toan tong hop task vi gan voi workflow hoc tap; Do Hoang Quan uu tien ticket routing vi co volume va metric ro hon. Dương Đức Vương, Nguyễn Ngọc Linh va Lê Thị Trâm Anh tham gia validation, research va chuẩn hóa báo cáo. Nhom tam chot ticket routing theo diem so va kha nang kiem thu, nhung phai xac nhan lai bang validation va bo sung cac bao cao ca nhan con thieu truoc khi Go.
+Nguyễn Đức Anh Quân ưu tiên bài toán tổng hợp task vì gần với workflow học tập; Đỗ Hoàng Quân ưu tiên ticket routing vì có volume và metric rõ hơn. Dương Đức Vương, Nguyễn Ngọc Linh và Lê Thị Trâm Anh tham gia validation, research và chuẩn hóa báo cáo. Nhóm tạm chốt ticket routing theo điểm số và khả năng kiểm thử, nhưng phải xác nhận lại bằng validation và bổ sung các báo cáo cá nhân còn thiếu trước khi Go.
 ```
 
 ---
@@ -91,32 +91,32 @@ Nguyen Duc Anh Quan uu tien bai toan tong hop task vi gan voi workflow hoc tap; 
 
 ### 4.1. Quick validation
 
-Chua co interview/survey doc lap trong ba file dau vao. Cac con so duoi day la quan sat/uoc tinh tu ca nhan, khong phai quote da xac minh.
+Chưa có interview/survey độc lập trong ba file đầu vào. Các con số dưới đây là quan sát/ước tính từ cá nhân, không phải quote đã xác minh.
 
-| Nguon | So nguoi/mau | Tin hieu xac nhan | Tin hieu phan bac | Nhom sua problem the nao |
+| Nguồn | Số người/mẫu | Tín hiệu xác nhận | Tín hiệu phản bác | Nhóm sửa problem thế nào |
 |---|---:|---|---|---|
-| Bao cao cua Do Hoang Quan | 1 nguoi quan sat, uoc tinh 200 ticket/ngay | 8 phut/ticket; CSKH doc va chon BQL thu cong | Chua co log/ticket mau | Giu candidate dang hypothesis, gioi han vao ticket mot intent |
-| Bao cao cua Nguyen Duc Anh Quan | 1 nhom hoc tap, 4 nguoi | Xac nhan pain chung la thong tin roi rac va can checklist | Khong truc tiep validate ticket cu dan | Dung de so sanh, khong dung lam bang chung domain Vinhomes |
-| Interview/survey nguoi dung | Chua thuc hien | Chua co quote nguyen van | Chua co | Can phong van 2-3 CSKH/dispatcher hoac dung tap ticket an danh |
+| Báo cáo của Đỗ Hoàng Quân | 1 người quan sát, ước tính 200 ticket/ngày | 8 phút/ticket; CSKH đọc và chọn BQL thủ công | Chưa có log/ticket mẫu | Giữ candidate dạng hypothesis, giới hạn vào ticket một intent |
+| Báo cáo của Nguyễn Đức Anh Quân | 1 nhóm học tập, 4 người | Xác nhận pain chung là thông tin rời rạc và cần checklist | Không trực tiếp validate ticket cư dân | Dùng để so sánh, không dùng làm bằng chứng domain Vinhomes |
+| Interview/survey người dùng | Chưa thực hiện | Chưa có quote nguyên văn | Chưa có | Cần phỏng vấn 2-3 CSKH/dispatcher hoặc dùng tập ticket ẩn danh |
 
 **Insight sau validation:**
 
 ```text
-Chua du bang chung de ket luan pain 200 ticket/ngay la dai dien cho moi khu do thi. Pain can kiem chung la thoi gian doc va route ticket khong co cau truc; prototype chi nen xu ly mot so danh muc co quy tac ro va luon de CSKH review.
+Chưa đủ bằng chứng để kết luận pain 200 ticket/ngày là đại diện cho mọi khu đô thị. Pain cần kiểm chứng là thời gian đọc và route ticket không có cấu trúc; prototype chỉ nên xử lý một số danh mục có quy tắc rõ và luôn để CSKH review.
 ```
 
-### 4.2. Research giai phap da co
+### 4.2. Research giải pháp đã có
 
-| Nguon/tool/case | Link | Ho giai quyet buoc nao? | Diem manh | Khoang trong/rui ro | Bai hoc cho nhom |
+| Nguồn/tool/case | Link | Họ giải quyết bước nào? | Điểm mạnh | Khoảng trống/rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| Microsoft Power Automate - AI Builder text classification | [Microsoft Learn](https://learn.microsoft.com/en-us/ai-builder/text-classification-overview) | Phan loai text theo nhan | Tich hop workflow va human review | Phu thuoc du lieu huan luyen, multi-intent kho | Bat dau bang classification co nhan |
-| Azure AI Language - custom text classification | [Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/overview) | Gan nhan danh muc cho van ban | Co custom category va API | Can tap du lieu an danh, theo doi drift | Dinh nghia taxonomy nho va metric F1/accuracy |
-| Structured outputs voi Azure OpenAI | [Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/structured-outputs) | Trich xuat entity, muc do khan va BQL | JSON de ket noi workflow | JSON hop le khong dong nghia thong tin dung | Validate schema, confidence va buoc review |
+| Microsoft Power Automate - AI Builder text classification | [Microsoft Learn](https://learn.microsoft.com/en-us/ai-builder/text-classification-overview) | Phân loại text theo nhãn | Tích hợp workflow và human review | Phụ thuộc dữ liệu huấn luyện, multi-intent khó | Bắt đầu bằng classification có nhãn |
+| Azure AI Language - custom text classification | [Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/overview) | Gắn nhãn danh mục cho văn bản | Có custom category và API | Cần tập dữ liệu ẩn danh, theo dõi drift | Định nghĩa taxonomy nhỏ và metric F1/accuracy |
+| Structured outputs với Azure OpenAI | [Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/structured-outputs) | Trích xuất entity, mức độ khẩn và BQL | JSON dễ kết nối workflow | JSON hợp lệ không đồng nghĩa thông tin đúng | Validate schema, confidence và bước review |
 
 **Research takeaway:**
 
 ```text
-Nen build workflow nho: nhan ticket -> trich xuat truong co cau truc -> goi y danh muc/BQL -> CSKH review -> chuyen tiep. Khong nen build agent tu lap ke hoach, khong nen tu dong chuyen ticket khi confidence thap, va khong nen dua ra cam ket SLA khi chua co du lieu thuc.
+Nên build workflow nhỏ: nhận ticket -> trích xuất trường có cấu trúc -> gợi ý danh mục/BQL -> CSKH review -> chuyển tiếp. Không nên build agent tự lập kế hoạch, không nên tự động chuyển ticket khi confidence thấp, và không nên đưa ra cam kết SLA khi chưa có dữ liệu thực.
 ```
 
 ---
@@ -129,17 +129,17 @@ Nen build workflow nho: nhan ticket -> trich xuat truong co cau truc -> goi y da
 [1 Nhan ticket: 1'] -> [2 Doc va hieu noi dung: 4'] -> [3 Chon danh muc/BQL: 2'] -> [4 Gui xac nhan va chuyen ticket: 1']
 ```
 
-| Buoc | Actor | Input | Output | Thoi gian/tan suat | Ghi chu |
+| Bước | Actor | Input | Output | Thời gian/tần suất | Ghi chú |
 |---|---|---|---|---|---|
-| 1 | CSKH | Ticket, anh, thong tin can ho | Ticket duoc mo | 1 phut, hang ngay | Nguon tu App Resident/CRM |
-| 2 | CSKH | Mo ta tu nhien, anh dinh kem | Hieu so bo ve van de | 4 phut | Bottleneck; noi dung khong cau truc |
-| 3 | CSKH | Noi dung da doc, danh ba BQL | Danh muc va noi nhan | 2 phut | Co the nham voi ticket multi-intent |
-| 4 | CSKH/BQL | Ticket da phan loai | Ticket duoc route | 1 phut | Handoff sang BQL |
+| 1 | CSKH | Ticket, ảnh, thông tin căn hộ | Ticket được mở | 1 phút, hằng ngày | Nguồn từ App Resident/CRM |
+| 2 | CSKH | Mô tả tự nhiên, ảnh đính kèm | Hiểu sơ bộ về vấn đề | 4 phút | Bottleneck; nội dung không cấu trúc |
+| 3 | CSKH | Nội dung đã đọc, danh bạ BQL | Danh mục và nơi nhận | 2 phút | Có thể nhầm với ticket multi-intent |
+| 4 | CSKH/BQL | Ticket đã phân loại | Ticket được route | 1 phút | Handoff sang BQL |
 
 **Bottleneck chinh:**
 
 ```text
-CSKH phai doc va dien giai lai van ban tu nhien truoc khi chon danh muc va BQL. Neu thieu thong tin hoac ticket co nhieu y, viec route sai lam tang thoi gian phan hoi; AI chi nen goi y va danh dau do tin cay, khong tu dong quyet dinh moi truong hop.
+CSKH phải đọc và diễn giải lại văn bản tự nhiên trước khi chọn danh mục và BQL. Nếu thiếu thông tin hoặc ticket có nhiều ý, việc route sai làm tăng thời gian phản hồi; AI chỉ nên gợi ý và đánh dấu độ tin cậy, không tự động quyết định mọi trường hợp.
 ```
 
 ### 5.2. Future workflow
@@ -147,56 +147,56 @@ CSKH phai doc va dien giai lai van ban tu nhien truoc khi chon danh muc va BQL. 
 ```text
 [1 Nhan ticket - he thong] -> [2 Rule kiem tra truong bat buoc] -> [3 AI trich xuat JSON va goi y danh muc/BQL] -> [4 CSKH review, sua neu can - boundary] -> [5 He thong chuyen ticket]
 
-Fallback: confidence < 0.85, schema loi, ticket multi-intent hoac AI timeout thi dua vao hang doi xu ly thu cong; khong tu dong route.
+Fallback: confidence < 0.85, schema lỗi, ticket multi-intent hoặc AI timeout thì đưa vào hàng đợi xử lý thủ công; không tự động route.
 ```
 
 **Before/after impact:**
 
-| Metric | Truoc | Sau ky vong | Cach do |
+| Metric | Trước | Sau kỳ vọng | Cách đo |
 |---|---:|---:|---|
-| Thoi gian xu ly ticket | 8 phut | <= 2 phut | Timestamp nhan den route |
-| So buoc thu cong | 4 | 1-2 | Dem thao tac cua CSKH |
-| Accuracy route | Chua co baseline | >= 92% | So sanh voi nhan dung do reviewer |
-| Ticket bi tra ve/sua route | Chua co baseline | Giam 30% | Log route va correction |
-| Risk moi | Khong ap dung | AI route sai | Audit mau va fallback |
+| Thời gian xử lý ticket | 8 phút | <= 2 phút | Timestamp nhận đến route |
+| Số bước thủ công | 4 | 1-2 | Đếm thao tác của CSKH |
+| Accuracy route | Chưa có baseline | >= 92% | So sánh với nhãn đúng do reviewer |
+| Ticket bị trả về/sửa route | Chưa có baseline | Giảm 30% | Log route và correction |
+| Risk mới | Không áp dụng | AI route sai | Audit mẫu và fallback |
 
 ### 5.3. Problem Statement v0
 
-| Field | Noi dung |
+| Field | Nội dung |
 |---|---|
-| **Actor** | Nhan vien CSKH Ban Quan ly, nguoi tiep nhan va route ticket cu dan. |
-| **Workflow** | Nhan ticket, doc noi dung/anh, phan loai, chon BQL va chuyen tiep. |
-| **Bottleneck** | Doc van ban khong cau truc va doi chieu danh muc/BQL thu cong. |
-| **Impact** | Uoc tinh 8 phut/ticket, cham phan hoi va co nguy co route sai. |
-| **Success Metric** | Giam xu ly xuong <= 2 phut va route dung >= 92% trong tap pilot. |
-| **Boundary** | Chi xu ly triage; khong tu tra loi cam ket, khong tu quyet dinh xu ly su co, khong tu route khi confidence thap. |
+| **Actor** | Nhân viên CSKH Ban Quản lý, người tiếp nhận và route ticket cư dân. |
+| **Workflow** | Nhận ticket, đọc nội dung/ảnh, phân loại, chọn BQL và chuyển tiếp. |
+| **Bottleneck** | Đọc văn bản không cấu trúc và đối chiếu danh mục/BQL thủ công. |
+| **Impact** | Ước tính 8 phút/ticket, chậm phản hồi và có nguy cơ route sai. |
+| **Success Metric** | Giảm xử lý xuống <= 2 phút và route đúng >= 92% trong tập pilot. |
+| **Boundary** | Chỉ xử lý triage; không tự trả lời cam kết, không tự quyết định xử lý sự cố, không tự route khi confidence thấp. |
 
 **Cau hoi AI phan bien v0:**
-- Field mo ho: so lieu 200 ticket/ngay va 8 phut/ticket chua co log goc; taxonomy va tieu chi route dung chua chot.
-- Toi sua gi: danh dau cac so lieu la hypothesis, them confidence threshold, human review va fallback.
+- Field mơ hồ: số liệu 200 ticket/ngày và 8 phút/ticket chưa có log gốc; taxonomy và tiêu chí route đúng chưa chốt.
+- Tôi sửa gì: đánh dấu các số liệu là hypothesis, thêm confidence threshold, human review và fallback.
 
 ---
 
 ## Phase 6 - Rule / Workflow / Agent + Decision
 
-### 6.0. Ma tran do phu hop
+### 6.0. Ma trận độ phù hợp
 
-- Do mo ho: **[x] Cao** - ticket tieng Viet co the co nhieu y, anh dinh kem va thieu truong.
-- Do phuc tap: **[x] Cao** - nhieu buoc, ket hop extraction, classification, routing va review.
+- Độ mơ hồ: **[x] Cao** - ticket tiếng Việt có thể có nhiều ý, ảnh đính kèm và thiếu trường.
+- Độ phức tạp: **[x] Cao** - nhiều bước, kết hợp extraction, classification, routing và review.
 
 **Bai toan nhom nam o o:**
 
 ```text
-Cao mo ho / Cao phuc tap, nhung chi trong pham vi triage ticket; khong mo rong thanh agent tu xu ly su co.
+Cao mơ hồ / Cao phức tạp, nhưng chỉ trong phạm vi triage ticket; không mở rộng thành agent tự xử lý sự cố.
 ```
 
-### 6.1. So sanh Rule / Workflow / Agent
+### 6.1. So sánh Rule / Workflow / Agent
 
-| Muc | Phuong an | Khi nao du | Rui ro | Chon? |
+| Mức | Phương án | Khi nào đủ | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| Rule | Keyword, danh muc, danh ba BQL va required fields | Ticket co mau cau truc, tu vung on dinh | Bo sot cach dien dat tu nhien, multi-intent | Dung lam validation va fallback |
-| Workflow | Extraction/classification -> confidence -> CSKH review -> route | Da so ticket co the triage theo luong co dinh | Sai nhan hoac JSON loi | **Chon cho pilot** |
-| Agent | Tu lap ke hoach, goi nhieu tool, tu xu ly ticket | Quy trinh da co du lieu va governance manh | Kho audit, route sai, vuot boundary | Khong chon |
+| Rule | Keyword, danh mục, danh bạ BQL và required fields | Ticket có mẫu cấu trúc, từ vựng ổn định | Bỏ sót cách diễn đạt tự nhiên, multi-intent | Dùng làm validation và fallback |
+| Workflow | Extraction/classification -> confidence -> CSKH review -> route | Đa số ticket có thể triage theo luồng cố định | Sai nhãn hoặc JSON lỗi | **Chọn cho pilot** |
+| Agent | Tự lập kế hoạch, gọi nhiều tool, tự xử lý ticket | Quy trình đã có dữ liệu và governance mạnh | Khó audit, route sai, vượt boundary | Không chọn |
 
 **5 cau hoi chot:**
 1. Rule xu ly duoc ticket co keyword ro, nhung chua chac dat 70-80% khi van ban tu nhien va multi-intent nhieu.
