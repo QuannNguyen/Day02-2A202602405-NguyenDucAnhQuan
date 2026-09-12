@@ -57,9 +57,9 @@ Nhân viên vận hành phải đọc, phân loại và chuyển tiếp thông t
 
 | Candidate | Actor rõ | Workflow rõ | Pain có evidence | Impact đo được | Làm trong lab | So sánh R/W/A | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Phan loai/routing ticket cu dan | 5 | 5 | 4 | 5 | 4 | 5 | 3 | 31 |
-| Tong hop task/deadline nhieu kenh | 5 | 5 | 4 | 4 | 3 | 4 | 4 | 29 |
-| Xu ly su co pin nguy cap | 5 | 5 | 4 | 5 | 2 | 3 | 3 | 27 |
+| Phân loại/routing ticket cư dân | 5 | 5 | 4 | 5 | 4 | 5 | 3 | 31 |
+| Tổng hợp task/deadline nhiều kênh | 5 | 5 | 4 | 4 | 3 | 4 | 4 | 29 |
+| Xử lý sự cố pin nguy cấp | 5 | 5 | 4 | 5 | 2 | 3 | 3 | 27 |
 
 **Candidate nhóm chọn:**
 
@@ -136,7 +136,7 @@ Nên build workflow nhỏ: nhận ticket -> trích xuất trường có cấu tr
 | 3 | CSKH | Nội dung đã đọc, danh bạ BQL | Danh mục và nơi nhận | 2 phút | Có thể nhầm với ticket multi-intent |
 | 4 | CSKH/BQL | Ticket đã phân loại | Ticket được route | 1 phút | Handoff sang BQL |
 
-**Bottleneck chinh:**
+**Bottleneck chính:**
 
 ```text
 CSKH phải đọc và diễn giải lại văn bản tự nhiên trước khi chọn danh mục và BQL. Nếu thiếu thông tin hoặc ticket có nhiều ý, việc route sai làm tăng thời gian phản hồi; AI chỉ nên gợi ý và đánh dấu độ tin cậy, không tự động quyết định mọi trường hợp.
@@ -171,7 +171,7 @@ Fallback: confidence < 0.85, schema lỗi, ticket multi-intent hoặc AI timeout
 | **Success Metric** | Giảm xử lý xuống <= 2 phút và route đúng >= 92% trong tập pilot. |
 | **Boundary** | Chỉ xử lý triage; không tự trả lời cam kết, không tự quyết định xử lý sự cố, không tự route khi confidence thấp. |
 
-**Cau hoi AI phan bien v0:**
+**Câu hỏi AI phản biện v0:**
 - Field mơ hồ: số liệu 200 ticket/ngày và 8 phút/ticket chưa có log gốc; taxonomy và tiêu chí route đúng chưa chốt.
 - Tôi sửa gì: đánh dấu các số liệu là hypothesis, thêm confidence threshold, human review và fallback.
 
