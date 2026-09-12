@@ -126,7 +126,7 @@ Nên build workflow nhỏ: nhận ticket -> trích xuất trường có cấu tr
 ### 5.1. Current workflow
 
 ```text
-[1 Nhan ticket: 1'] -> [2 Doc va hieu noi dung: 4'] -> [3 Chon danh muc/BQL: 2'] -> [4 Gui xac nhan va chuyen ticket: 1']
+[1 Nhận ticket: 1'] -> [2 Đọc và hiểu nội dung: 4'] -> [3 Chọn danh mục/BQL: 2'] -> [4 Gửi xác nhận và chuyển ticket: 1']
 ```
 
 | Bước | Actor | Input | Output | Thời gian/tần suất | Ghi chú |
@@ -145,7 +145,7 @@ CSKH phải đọc và diễn giải lại văn bản tự nhiên trước khi c
 ### 5.2. Future workflow
 
 ```text
-[1 Nhan ticket - he thong] -> [2 Rule kiem tra truong bat buoc] -> [3 AI trich xuat JSON va goi y danh muc/BQL] -> [4 CSKH review, sua neu can - boundary] -> [5 He thong chuyen ticket]
+[1 Nhận ticket - hệ thống] -> [2 Rule kiểm tra trường bắt buộc] -> [3 AI trích xuất JSON và gợi ý danh mục/BQL] -> [4 CSKH review, sửa nếu cần - boundary] -> [5 Hệ thống chuyển ticket]
 
 Fallback: confidence < 0.85, schema lỗi, ticket multi-intent hoặc AI timeout thì đưa vào hàng đợi xử lý thủ công; không tự động route.
 ```
@@ -184,7 +184,7 @@ Fallback: confidence < 0.85, schema lỗi, ticket multi-intent hoặc AI timeout
 - Độ mơ hồ: **[x] Cao** - ticket tiếng Việt có thể có nhiều ý, ảnh đính kèm và thiếu trường.
 - Độ phức tạp: **[x] Cao** - nhiều bước, kết hợp extraction, classification, routing và review.
 
-**Bai toan nhom nam o o:**
+**Bài toán nhóm nằm ở ô:**
 
 ```text
 Cao mơ hồ / Cao phức tạp, nhưng chỉ trong phạm vi triage ticket; không mở rộng thành agent tự xử lý sự cố.
@@ -198,55 +198,55 @@ Cao mơ hồ / Cao phức tạp, nhưng chỉ trong phạm vi triage ticket; kh�
 | Workflow | Extraction/classification -> confidence -> CSKH review -> route | Đa số ticket có thể triage theo luồng cố định | Sai nhãn hoặc JSON lỗi | **Chọn cho pilot** |
 | Agent | Tự lập kế hoạch, gọi nhiều tool, tự xử lý ticket | Quy trình đã có dữ liệu và governance mạnh | Khó audit, route sai, vượt boundary | Không chọn |
 
-**5 cau hoi chot:**
-1. Rule xu ly duoc ticket co keyword ro, nhung chua chac dat 70-80% khi van ban tu nhien va multi-intent nhieu.
-2. Cac buoc chinh di theo luong thang, co nhanh fallback khi confidence thap.
-3. Khong can Agent tu lap ke hoach; workflow co schema va human review la du.
-4. CSKH phat hien sai trong buoc review, muc tieu khong qua 20 giay/ticket trong pilot.
-5. Co the ha xuong Rule cho danh muc co tu khoa va dung workflow cho phan con lai.
+**5 câu hỏi chốt:**
+1. Rule xử lý được ticket có keyword rõ, nhưng chưa chắc đạt 70-80% khi văn bản tự nhiên và multi-intent nhiều.
+2. Các bước chính đi theo luồng thẳng, có nhánh fallback khi confidence thấp.
+3. Không cần Agent tự lập kế hoạch; workflow có schema và human review là đủ.
+4. CSKH phát hiện sai trong bước review, mục tiêu không quá 20 giây/ticket trong pilot.
+5. Có thể hạ xuống Rule cho danh mục có từ khóa và dùng workflow cho phần còn lại.
 
-**Muc chon:**
+**Mức chọn:**
 
 ```text
 Workflow
 ```
 
-**Vi sao chon:**
+**Vì sao chọn:**
 
 ```text
-Workflow tach phan AI goi y khoi quyet dinh route cuoi. Schema, confidence threshold va audit log lam cho ket qua co the kiem tra. No phu hop hon Agent vi cac buoc, nguoi review va fallback da biet truoc.
+Workflow tách phần AI gợi ý khỏi quyết định route cuối. Schema, confidence threshold và audit log làm cho kết quả có thể kiểm tra. Nó phù hợp hơn Agent vì các bước, người review và fallback đã biết trước.
 ```
 
-**Vi sao khong chon muc don gian hon:**
+**Vì sao không chọn mức đơn giản hơn:**
 
 ```text
-Rule chi phu hop voi ticket co mau cau truc va tu khoa on dinh, trong khi dau vao la mo ta tu nhien. Tuy nhien nhom van giu Rule cho required fields, keyword va fallback; AI chi xu ly phan Rule khong bao phu.
+Rule chỉ phù hợp với ticket có mẫu cấu trúc và từ khóa ổn định, trong khi đầu vào là mô tả tự nhiên. Tuy nhiên nhóm vẫn giữ Rule cho required fields, keyword và fallback; AI chỉ xử lý phần Rule không bao phủ.
 ```
 
 ### 6.2. Problem Statement v1
 
-| Field | Noi dung |
+| Field | Nội dung |
 |---|---|
-| **Actor** | CSKH Ban Quan ly, review goi y truoc khi route ticket cu dan. |
-| **Workflow** | CRM nhan ticket; Rule kiem tra input; model trich xuat entity va goi y category/BQL; CSKH review; he thong route. |
-| **Bottleneck** | 4-6 phut doc va dien giai noi dung khong cau truc, sau do tra danh muc va BQL. |
-| **Impact** | Hypothesis: baseline 8 phut/ticket; muc tieu pilot <= 2 phut, route dung >= 92%. Can log de xac minh. |
-| **Success Metric** | Median time/ticket, accuracy route, ty le sua goi y, ty le fallback va ticket bi tra ve. |
-| **Boundary** | Lam triage va goi y route. Khong tu tra loi khach, khong tu phan cong ky thuat vien, khong tu dong xu ly ticket confidence thap. |
-| **AI intervention point** | Sau Rule kiem tra input va truoc buoc CSKH chon danh muc/BQL. |
-| **Muc chon** | Workflow, vi luong co dinh va can ket hop AI voi human review. |
-| **Rui ro & nguoi that kiem tra** | Route sai hoac bo sot muc do khan; CSKH review 100% pilot, Ops audit mau hang ngay va co fallback thu cong. |
+| **Actor** | CSKH Ban Quản lý, review gợi ý trước khi route ticket cư dân. |
+| **Workflow** | CRM nhận ticket; Rule kiểm tra input; model trích xuất entity và gợi ý category/BQL; CSKH review; hệ thống route. |
+| **Bottleneck** | 4-6 phút đọc và diễn giải nội dung không cấu trúc, sau đó tra danh mục và BQL. |
+| **Impact** | Hypothesis: baseline 8 phút/ticket; mục tiêu pilot <= 2 phút, route đúng >= 92%. Cần log để xác minh. |
+| **Success Metric** | Median time/ticket, accuracy route, tỷ lệ sửa gợi ý, tỷ lệ fallback và ticket bị trả về. |
+| **Boundary** | Làm triage và gợi ý route. Không tự trả lời khách, không tự phân công kỹ thuật viên, không tự động xử lý ticket confidence thấp. |
+| **AI intervention point** | Sau Rule kiểm tra input và trước bước CSKH chọn danh mục/BQL. |
+| **Mức chọn** | Workflow, vì luồng cố định và cần kết hợp AI với human review. |
+| **Rủi ro & người thật kiểm tra** | Route sai hoặc bỏ sót mức độ khẩn; CSKH review 100% pilot, Ops audit mẫu hằng ngày và có fallback thủ công. |
 
 ### 6.3. Final decision
 
-| Cau hoi | Yes / Not Yet / No | Ghi chu |
+| Câu hỏi | Yes / Not Yet / No | Ghi chú |
 |---|---|---|
-| Actor + workflow ro chua? | Yes | Actor va 5 buoc da duoc gioi han. |
-| Baseline + metric do duoc chua? | Not Yet | Co uoc tinh 8 phut va 200 ticket/ngay nhung chua co log goc. |
-| Data/input du dung chua? | Not Yet | Can tap ticket an danh, taxonomy va danh ba BQL. |
-| AI sai, hau qua chap nhan duoc khong? | Yes, co dieu kien | Chi goi y, CSKH duyet, confidence thap thi fallback. |
-| Co nguoi review/owner khong? | Yes | CSKH review; Ops quan ly taxonomy va audit. |
-| Co cach non-AI don gian hon khong? | Yes | Rule/required fields la baseline va fallback. |
+| Actor + workflow rõ chưa? | Yes | Actor và 5 bước đã được giới hạn. |
+| Baseline + metric đo được chưa? | Not Yet | Có ước tính 8 phút và 200 ticket/ngày nhưng chưa có log gốc. |
+| Data/input đủ dùng chưa? | Not Yet | Cần tập ticket ẩn danh, taxonomy và danh bạ BQL. |
+| AI sai, hậu quả chấp nhận được không? | Yes, có điều kiện | Chỉ gợi ý, CSKH duyệt, confidence thấp thì fallback. |
+| Có người review/owner không? | Yes | CSKH review; Ops quản lý taxonomy và audit. |
+| Có cách non-AI đơn giản hơn không? | Yes | Rule/required fields là baseline và fallback. |
 
 **Decision:**
 
@@ -254,43 +254,43 @@ Rule chi phu hop voi ticket co mau cau truc va tu khoa on dinh, trong khi dau va
 Not Yet
 ```
 
-**Ly do:**
+**Lý do:**
 
 ```text
-Workflow co actor, bottleneck va metric du kien ro, va co boundary an toan cho human review. Tuy nhien hai so lieu chinh moi la uoc tinh tu bao cao ca nhan, chua co interview, survey hay log ticket de xac minh. Nhom chi nen chuyen sang Go sau khi lay du lieu an danh, chot taxonomy va do baseline tren tap mau.
+Workflow có actor, bottleneck và metric dự kiến rõ, và có boundary an toàn cho human review. Tuy nhiên hai số liệu chính mới là ước tính từ báo cáo cá nhân, chưa có interview, survey hay log ticket để xác minh. Nhóm chỉ nên chuyển sang Go sau khi lấy dữ liệu ẩn danh, chốt taxonomy và đo baseline trên tập mẫu.
 ```
 
-**Neu Go - pilot nho nhat:**
+**Nếu Go - pilot nhỏ nhất:**
 
 ```text
-Lay 100-200 ticket da an danh cua mot khu do thi, chi chon 5 danh muc va mot danh ba BQL. Chay song song cach cu va workflow moi, khong tu dong route; do 3 so: median time/ticket, accuracy route va ty le CSKH sua goi y.
+Lấy 100-200 ticket đã ẩn danh của một khu đô thị, chỉ chọn 5 danh mục và một danh bạ BQL. Chạy song song cách cũ và workflow mới, không tự động route; đo 3 số: median time/ticket, accuracy route và tỷ lệ CSKH sửa gợi ý.
 ```
 
-**Neu Not Yet - can validate gi truoc:**
+**Nếu Not Yet - cần validate gì trước:**
 
 ```text
-Phong van 2-3 CSKH/dispatcher do Dương Đức Vương va Nguyễn Ngọc Linh phu trach; thu thap ticket mau da an danh; xac nhan baseline 8 phut, volume va tieu chi route dung; Lê Thị Trâm Anh tong hop ket qua vao bao cao; bo sung cac bao cao ca nhan con thieu.
+Phỏng vấn 2-3 CSKH/dispatcher do Dương Đức Vương và Nguyễn Ngọc Linh phụ trách; thu thập ticket mẫu đã ẩn danh; xác nhận baseline 8 phút, volume và tiêu chí route đúng; Lê Thị Trâm Anh tổng hợp kết quả vào báo cáo; bổ sung các báo cáo cá nhân còn thiếu.
 ```
 
-**Neu No-Go - lam gi thay AI:**
+**Nếu No-Go - làm gì thay AI:**
 
 ```text
-Dung form co truong bat buoc, taxonomy nho, keyword rules va danh ba BQL duy nhat; theo doi route sai bang audit hang ngay.
+Dùng form có trường bắt buộc, taxonomy nhỏ, keyword rules và danh bạ BQL duy nhất; theo dõi route sai bằng audit hằng ngày.
 ```
 
 **Exit / rollback:**
 
 ```text
-Tat AI va quay ve Rule + CSKH thu cong neu accuracy route duoi 92% trong hai dot audit lien tiep, ty le sua goi y vuot 20%, co ticket khan bi route sai, schema loi lap lai, hoac AI timeout vuot nguong da dat.
+Tắt AI và quay về Rule + CSKH thủ công nếu accuracy route dưới 92% trong hai đợt audit liên tiếp, tỷ lệ sửa gợi ý vượt 20%, có ticket khẩn bị route sai, schema lỗi lặp lại, hoặc AI timeout vượt ngưỡng đã đặt.
 ```
 
 ---
 
-### Self-check nop phan 02
+### Self-check nộp phần 02
 
-- [x] Co nhat ky hoi tu tu cac bao cao da nhan, cluster, shortlist va score.
-- [ ] Co validation voi quote that; chua co trong input, can bo sung truoc khi Go.
-- [x] Co workflow truoc/sau, thoi gian, handoff, bottleneck, boundary va fallback.
-- [x] Co PS v0 -> v1, metric truoc/sau va cach do.
-- [x] Co so sanh Rule/Workflow/Agent va Decision Not Yet co ly do.
-- [ ] Da bo sung candidate ca nhan tu `individual-report3.md`; file hien dang rong.
+- [x] Có nhật ký hội tụ từ các báo cáo đã nhận, cluster, shortlist và score.
+- [ ] Có validation với quote thật; chưa có trong input, cần bổ sung trước khi Go.
+- [x] Có workflow trước/sau, thời gian, handoff, bottleneck, boundary và fallback.
+- [x] Có PS v0 -> v1, metric trước/sau và cách đo.
+- [x] Có so sánh Rule/Workflow/Agent và Decision Not Yet có lý do.
+- [ ] Đã bổ sung candidate cá nhân từ `individual-report3.md`; file hiện đang rỗng.
