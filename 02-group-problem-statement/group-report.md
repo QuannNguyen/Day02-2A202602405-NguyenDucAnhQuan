@@ -28,13 +28,13 @@ Nhân viên vận hành phải đọc, phân loại và chuyển tiếp thông t
 |---|---|---|---|---|---|
 | 1 | Nguyễn Đức Anh Quân | Tổng hợp task/deadline từ Discord, Zalo, Google Docs | Leader và thành viên nhóm | Đọc, đối chiếu và gom thông tin từ nhiều kênh | Workflow rõ, nhưng cần giới hạn phạm vi nguồn |
 | 2 | Nguyễn Đức Anh Quân | Tìm lại tài liệu, quyết định và file cũ trước deadline | Cả nhóm | Search và xác định đúng phiên bản | Pain lặp lại, cần kho dữ liệu có quyền truy cập |
-| 3 | Nguyễn Đức Anh Quân | Viết báo cáo/README từ nhiều nguồn rời rạc | Người viết báo cáo | Đọc, tóm tắt, tạo draft và sửa format | AI phù hợp ở bước outline/draft, không nên tự viết toàn bộ |
-| 4 | Đỗ Hoàng Quân | Xử lý sự cố pin xe Xanh SM và điều phối xe sạc/cứu hộ | Dispatcher và tài xế | Đối chiếu GPS, trạm sạc, % pin và soạn hướng dẫn | Impact lớn, nhưng rủi ro vận hành và dữ liệu realtime cao |
+| 3 | Lê Thị Trâm Anh | Viết báo cáo/README từ nhiều nguồn rời rạc | Người viết báo cáo | Đọc, tóm tắt, tạo draft và sửa format | AI phù hợp ở bước outline/draft, không nên tự viết toàn bộ |
+| 4 | Dương Đức Vương | Xử lý sự cố pin xe Xanh SM và điều phối xe sạc/cứu hộ | Dispatcher và tài xế | Đối chiếu GPS, trạm sạc, % pin và soạn hướng dẫn | Impact lớn, nhưng rủi ro vận hành và dữ liệu realtime cao |
 | 5 | Đỗ Hoàng Quân | Phân loại và định tuyến ticket cư dân Vinhomes | CSKH và cư dân | Đọc ticket không cấu trúc, chọn danh mục và BQL | Workflow rõ, lặp lại cao, đo được tốt |
-| 6 | Đỗ Hoàng Quân | Chẩn đoán sơ bộ lỗi xe VinFast từ mô tả tiếng Việt | Kỹ thuật viên và khách hàng | Hỏi lại triệu chứng và tra cứu tài liệu | AI hiểu ngôn ngữ tự nhiên, nhưng risk sai chẩn đoán cao |
-| 7 | Đỗ Hoàng Quân | Tổng hợp lý do khách hủy cuốc từ ghi âm và ghi chú | BA/Ops | Nghe mẫu và tìm pattern thủ công | Có thể mở rộng nhưng cần dữ liệu ghi âm |
-| 8 | Đỗ Hoàng Quân | Trích xuất release notes từ commit/PR | Kỹ sư, QA và Ops | Hiểu commit viết tắt và chuyển thành nội dung để test | Phạm vi nhỏ, dễ làm prototype |
-| 9 | Dương Đức Vương, Nguyễn Ngọc Linh, Lê Thị Trâm Anh | Chưa có candidate từ báo cáo cá nhân | Chưa xác định | Chưa xác định | Cần bổ sung các báo cáo cá nhân |
+| 6 | Nguyễn Ngọc Linh | Chẩn đoán sơ bộ lỗi xe VinFast từ mô tả tiếng Việt | Kỹ thuật viên và khách hàng | Hỏi lại triệu chứng và tra cứu tài liệu | AI hiểu ngôn ngữ tự nhiên, nhưng risk sai chẩn đoán cao |
+| 7 | Nguyễn Ngọc Linh | Tổng hợp lý do khách hủy cuốc từ ghi âm và ghi chú | BA/Ops | Nghe mẫu và tìm pattern thủ công | Có thể mở rộng nhưng cần dữ liệu ghi âm |
+| 8 | Lê Thị Trâm Anh | Trích xuất release notes từ commit/PR | Kỹ sư, QA và Ops | Hiểu commit viết tắt và chuyển thành nội dung để test | Phạm vi nhỏ, dễ làm prototype |
+
 
 ### 3.2. Gom trùng / cluster
 
