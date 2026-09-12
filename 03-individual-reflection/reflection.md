@@ -6,7 +6,7 @@
 
 - Họ và tên: Nguyễn Đức Anh Quân
 - Mã học viên: 2A202602405
-- Nhóm: Lab02 - nhóm học tập về problem scan và AI workflow
+- Nhóm: Thần giao cách cảm - Zone A
 - Candidate problem nhóm chọn: Tổng hợp task/deadline từ nhiều kênh nhóm
 
 ---
